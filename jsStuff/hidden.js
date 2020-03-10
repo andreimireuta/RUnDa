@@ -53,3 +53,26 @@ function showDivJud() {
     document.getElementById('studii').style.display = "none";
     document.getElementById('judete').style.display = "none";
  }
+
+
+
+function showDivPie() {
+        document.getElementById('mainPie').style.display = "block";
+        
+    document.getElementById('mainBar').style.display = "none";
+    document.getElementById('mainLine').style.display = "none";
+ }
+
+ function showDivBar() {
+        document.getElementById('mainBar').style.display = "block";
+        
+    document.getElementById('mainPie').style.display = "none";
+    document.getElementById('mainLine').style.display = "none";
+ }
+
+ function showDivLine() {
+        document.getElementById('mainLine').style.display = "block";
+        
+    document.getElementById('mainBar').style.display = "none";
+    document.getElementById('mainPie').style.display = "none";
+ }

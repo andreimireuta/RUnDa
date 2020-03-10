@@ -1,52 +1,78 @@
 function showDivJud() {
-    document.getElementsByClassName('hidden_zone').style.display = "none";
     if(document.getElementById('judete').style.display === "block")
         document.getElementById('judete').style.display = "none";
     else
         document.getElementById('judete').style.display = "block";
+
+    document.getElementById('luni').style.display = "none";
+    document.getElementById('varsta').style.display = "none";
+    document.getElementById('mediu').style.display = "none";
+    document.getElementById('studii').style.display = "none";
  }
  function showDivStudii() {
-    document.getElementsByClassName('hidden_zone').style.display = "none";
     if(document.getElementById('studii').style.display === "block")
         document.getElementById('studii').style.display = "none";
     else
         document.getElementById('studii').style.display = "block";
+
+    document.getElementById('luni').style.display = "none";
+    document.getElementById('varsta').style.display = "none";
+    document.getElementById('mediu').style.display = "none";
+    document.getElementById('judete').style.display = "none";
  }
  function showDivMediu() {
-    document.getElementsByClassName('hidden_zone').style.display = "none";
     if(document.getElementById('mediu').style.display === "block")
         document.getElementById('mediu').style.display = "none";
     else
         document.getElementById('mediu').style.display = "block";
+
+    document.getElementById('luni').style.display = "none";
+    document.getElementById('varsta').style.display = "none";
+    document.getElementById('studii').style.display = "none";
+    document.getElementById('judete').style.display = "none";
  }
  function showDivVarsta() {
-    document.getElementsByClassName('hidden_zone').style.display = "none";
     if(document.getElementById('varsta').style.display === "block")
         document.getElementById('varsta').style.display = "none";
     else
         document.getElementById('varsta').style.display = "block";
+
+    document.getElementById('luni').style.display = "none";
+    document.getElementById('mediu').style.display = "none";
+    document.getElementById('studii').style.display = "none";
+    document.getElementById('judete').style.display = "none";
  }
  function showDivLuni() {
-    document.getElementsByClassName('hidden_zone').style.display = "none";
     if(document.getElementById('luni').style.display === "block")
         document.getElementById('luni').style.display = "none";
     else
         document.getElementById('luni').style.display = "block";
+        
+    document.getElementById('varsta').style.display = "none";
+    document.getElementById('mediu').style.display = "none";
+    document.getElementById('studii').style.display = "none";
+    document.getElementById('judete').style.display = "none";
  }
 
 
 
 function showDivPie() {
-    document.getElementsByClassName('charts').style.display = "none";
         document.getElementById('mainPie').style.display = "block";
+        
+    document.getElementById('mainBar').style.display = "none";
+    document.getElementById('mainLine').style.display = "none";
  }
 
  function showDivBar() {
-    document.getElementsByClassName('charts').style.display = "none";
         document.getElementById('mainBar').style.display = "block";
+        
+    document.getElementById('mainPie').style.display = "none";
+    document.getElementById('mainLine').style.display = "none";
  }
 
  function showDivLine() {
-    document.getElementsByClassName('charts').style.display = "none";
         document.getElementById('mainLine').style.display = "block";
+        
+    document.getElementById('mainBar').style.display = "none";
+    document.getElementById('mainPie').style.display = "none";
  }

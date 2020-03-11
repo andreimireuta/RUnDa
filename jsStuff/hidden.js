@@ -58,6 +58,7 @@ function showDivLuni() {
 function showDivPie() {
     document.getElementById('mainPie').style.display = "block";
 
+    document.getElementById('mainFirst').style.display = "none";
     document.getElementById('mainBar').style.display = "none";
     document.getElementById('mainLine').style.display = "none";
     document.getElementById('mainMap').style.display = "none";
@@ -66,6 +67,7 @@ function showDivPie() {
 function showDivBar() {
     document.getElementById('mainBar').style.display = "block";
 
+    document.getElementById('mainFirst').style.display = "none";
     document.getElementById('mainPie').style.display = "none";
     document.getElementById('mainLine').style.display = "none";
     document.getElementById('mainMap').style.display = "none";
@@ -74,6 +76,7 @@ function showDivBar() {
 function showDivLine() {
     document.getElementById('mainLine').style.display = "block";
 
+    document.getElementById('mainFirst').style.display = "none";
     document.getElementById('mainBar').style.display = "none";
     document.getElementById('mainPie').style.display = "none";
     document.getElementById('mainMap').style.display = "none";
@@ -82,7 +85,9 @@ function showDivLine() {
 function showDivMap() {
     document.getElementById('mainMap').style.display = "block";
 
+    document.getElementById('mainFirst').style.display = "none";
     document.getElementById('mainBar').style.display = "none";
     document.getElementById('mainPie').style.display = "none";
     document.getElementById('mainLine').style.display = "none";
+
 }

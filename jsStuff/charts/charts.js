@@ -1,8 +1,10 @@
 function selectChart(numar) {
   if (numar === 0) {
+    document.getElementById('canvas').style.width = '70vw';
     var ctx = document.getElementById('chart-pie').getContext('2d');
     window.myPie = new Chart(ctx, config);
   } else if (numar === 1) {
+    document.getElementById('canvas-line').style.width = '90vw';
     var ctx = document.getElementById('chart-line').getContext('2d');
     window.myLine = new Chart(ctx, config1);
   } else {
@@ -57,16 +59,19 @@ var config = {
 };
 
 
-var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
 var config1 = {
   type: 'line',
   data: {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    labels: MONTHS,
     datasets: [{
       label: 'My First dataset',
       backgroundColor: 'red',
       borderColor: 'red',
       data: [
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
         randomScalingFactor(),
         randomScalingFactor(),
         randomScalingFactor(),
@@ -88,16 +93,15 @@ var config1 = {
         randomScalingFactor(),
         randomScalingFactor(),
         randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
         randomScalingFactor()
       ],
     }]
   },
   options: {
     responsive: true,
-    title: {
-      display: true,
-      text: 'Chart.js Line Chart'
-    },
     tooltips: {
       mode: 'index',
       intersect: false,
@@ -111,15 +115,24 @@ var config1 = {
         display: true,
         scaleLabel: {
           display: true,
-          labelString: 'Month'
+          labelString: 'Month',
+          fontSize: 10
         }
       },
       y: {
         display: true,
         scaleLabel: {
           display: true,
-          labelString: 'Value'
+          labelString: 'Value',
+          fontSize: 10
         }
+      }
+    },
+    fullWidth: true,
+    legend: {
+      labels: {
+        fontColor: 'black',
+        fontSize: 10
       }
     }
   }

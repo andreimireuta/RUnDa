@@ -89,5 +89,4 @@ function showDivMap() {
     document.getElementById('mainBar').style.display = "none";
     document.getElementById('mainPie').style.display = "none";
     document.getElementById('mainLine').style.display = "none";
-
 }

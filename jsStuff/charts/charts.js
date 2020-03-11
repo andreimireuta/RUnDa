@@ -7,9 +7,10 @@ function selectChart(numar) {
     document.getElementById('canvas-line').style.width = '90vw';
     var ctx = document.getElementById('chart-line').getContext('2d');
     window.myLine = new Chart(ctx, config1);
-  } else {
-    var ctx = document.getElementById('chart-pie').getContext('2d');
-    window.myPie = new Chart(ctx, config);
+  } else if (numar === 2) {
+    document.getElementById('canvas-bar').style.width = '90vw';
+    var ctx = document.getElementById('chart-bar').getContext('2d');
+    window.myBar = new Chart(ctx, barChartData);
   }
 }
 var randomScalingFactor = function () {
@@ -138,3 +139,45 @@ var config1 = {
   }
 };
 
+var barChartData = {
+  type: 'bar',
+  data: {
+    labels: MONTHS,
+    datasets: [{
+      label: 'Dataset 1',
+      backgroundColor: 'rgb(79, 83, 22)',
+      borderColor: 'rgb(79, 83, 22)',
+      borderWidth: 1,
+      data: [
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor()
+      ]
+    }, {
+      label: 'Dataset 2',
+      backgroundColor: 'coral',
+      borderColor: 'coral',
+      borderWidth: 1,
+      data: [
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor()
+      ]
+    }]
+  },
+  options: {
+    responsive: true,
+    legend: {
+      position: 'top',
+      fontSize: 10
+    },
+  }
+};

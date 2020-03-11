@@ -110,9 +110,19 @@ body{
   min-width: 120px;
   height: 5vh;
   min-height: 70px;
-  margin: 0.5%;
   position: relative;
 
+}
+
+.buton-div-judete{
+  background-color: magenta;
+  width: 10vw;
+  min-width: 100px;
+  height: 6vh;
+  min-height: 65px;
+  position: relative;
+  margin: 0.5%;
+  float: left;
 }
 
 /* ##### Zona pentru butoane ################# */
@@ -171,6 +181,22 @@ body{
     text-decoration: none;
     display: block;
     font-size: 16px;
+    margin-top: 15px;
+    margin:auto;
+    position: relative;
+    top: 20%;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+}
+
+.buton-judete{
+  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8% 15%;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
     margin-top: 15px;
     margin:auto;
     position: relative;

@@ -7,15 +7,16 @@ body{
 #container{
     margin:0%;
     margin-top: 0%;
-    background-color: white;
+    background-color: #ffebd9;
     position: relative;
 }
 #criterii{
     display: flex;
-    background-color: bisque;
+    background-color: #ffebd9;
     margin: 1%;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    border-radius: 15px;
     
 }
 .hidden_zone{
@@ -26,29 +27,29 @@ body{
     display: none;
 }
 #judete{
-    background-color: blueviolet;
+    background-color: #ecfbfc;
 }
 #studii{
-  background-color: blue;
+  background-color: #ecfbfc;
 }
 #mediu{
-  background-color: royalblue;
+  background-color: #ecfbfc;
 }
 #varsta{
-  background-color: cadetblue;
+  background-color: #ecfbfc;
 }
 #luni{
-  background-color: coral;
+  background-color: #ecfbfc;
 }
 .charts{
   display: flex;
-  background-color: rgb(79, 83, 22);
+  background-color: #ecfbfc;
   margin: 1%;
   display: none;
 }
 #mainFirst{
   display: flex;
-  background-color: rgb(150, 150, 150);
+  background-color: #ecfbfc);
   height: 60vh;
   align-items: center;
   justify-content: center;
@@ -77,26 +78,24 @@ body{
 }
 #grafice{
   display: flex;
-  background-color: bisque;
+  background-color: #ffebd9;
   margin: 1%;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.button1{
-  position: relative;
-  top:25px;
-  margin: auto;
+/* ##### Zona pentru div-urile ce contin butoane ################# */
 
-}
 .btn1{
-    background-color: rgb(214, 202, 226);
+    background-color:#ffebd9;
     width: 10vw;
     min-width: 90px;
     height: 5vh;
     min-height: 60px;
     margin: 0.5%;
     position: relative;
+    border-radius: 20px;
 }
+
 .btn2{
   background-color: rgb(214, 202, 226);
   width: 150px;
@@ -106,7 +105,7 @@ body{
 }
 
 .btn4{
-  background-color: rgb(214, 202, 226);
+  background-color: #ffebd9);
   width: 10vw;
   min-width: 120px;
   height: 5vh;
@@ -115,6 +114,55 @@ body{
   position: relative;
 
 }
+
+/* ##### Zona pentru butoane ################# */
+
+.button1{
+  position: relative;
+  top:25px;
+  margin: auto;
+
+}
+
+.testbutton {
+  font-family: 'arial black';
+  color: #F2F2F2 !important;
+  font-size: 17px;
+  text-shadow: 1px 1px 1px #284027;
+  box-shadow: 1px 1px 1px #ffc8bd;
+  padding: 10px 25px;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  border-radius: 14px;
+  border: 1px solid #FFC8BD;
+  background: #9BEE9D;
+  background: linear-gradient(top,  #FFC8BD,  #A38079);
+  background: -ms-linear-gradient(top,  #FFC8BD,  #A38079);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFC8BD), to(#A38079));
+  background: -moz-linear-gradient(top,  #FFC8BD,  #A38079);
+  position: relative;
+  padding: 8% 15%;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin-top: 15px;
+    margin:auto;
+    position: relative;
+    top: 4%;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+
+}
+.testbutton:hover {
+  color: #F2F5F5 !important;
+  background: #468CCF;
+  background: linear-gradient(top,  #FFC8BD,  #D6A89F);
+  background: -ms-linear-gradient(top,  #FFC8BD,  #D6A89F);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFC8BD), to(#D6A89F));
+  background: -moz-linear-gradient(top,  #FFC8BD,  #D6A89F);
+}
+
+
 .button1{
     background-color: #4CAF50; /* Green */
     border: none;

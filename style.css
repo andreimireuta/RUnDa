@@ -49,7 +49,7 @@ body{
 }
 #mainFirst{
   display: flex;
-  background-color: #ecfbfc);
+  background-color: #ecfbfc;
   height: 60vh;
   align-items: center;
   justify-content: center;
